@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Home */
+
+* {
+    background-color: black;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 90px;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+li {
+    list-style: none;
+    color: white;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+}
+
+li:hover {
+    color: red;
+}
+
+#banner {
+    width: 100%;
+    background-image: url('../imagens/FBwMEAMWQAA6BOO.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+    cursor: pointer;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descricao {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 19px;
+    width: 90%;
+}
+
+.buttom {
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.buttom:hover {
+    background-color: white;
+    color: black;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-robert-pattinson-capuz-foto-divulgacao-warner-bros_fixed_large.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://i0.statig.com.br/bancodeimagens/42/2w/vl/422wvlxbdecwytldwljvgb4we.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://2.bp.blogspot.com/-N9DtMsBCAwI/XbtdLT8foBI/AAAAAAACzVU/bTyfrBq-ApwVG8DUfRmWYVlvKyzXJ-08wCK4BGAYYCw/s1600/jeffreywrights.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-size: 14px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+}
+
+/* Contato */
+
+.contact-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contact-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.contact-content {
+    width: 60%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+input {
+    width: 100%;
+    padding: 10px 16px 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px 16px 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.contact-info {
+    width: 50%;
+    height: 100%;
+    margin-left: 80px;
+}
+
+.contact-info-list {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 16px;
+}
+
+.list:hover{
+    color: white;
+}
+
+.icon {
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 50px;
+}
+
+.contact-social{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.social {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background-position: 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.img-social-1 {
+    background-image: url('./src/imagens/whatsapp1.png');
+}
+
+.img-social-2 {
+    background-image: url('./src/imagens/face1.png');
+}
+
+.img-social-3 {
+    background-image: url('./src/imagens/insta1.png');
+}
+
+.img-social-1:hover {
+    background-image: url('./src/imagens/whatsapp.png');
+    padding: 5px;
+    border-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.img-social-2:hover {
+    background-image: url('./src/imagens/facebook.png');
+    padding: 5px;
+    border-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+.img-social-3:hover {
+    background-image: url('./src/imagens/instagram.png');
+    padding: 5px;
+    border-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.direto {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservado {
+    color: gray;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 12px;
+}
+
+/* Fotos */
+
+hr {
+    border-color: white;
+    border-width: 1px;
+    border-style: inset;
+}
+
+.img-1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzvxTKluwKocWHy0Bwso9ZswDS3pK-qSSuw&usqp=CAU');
+}
+
+.img-2 {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/01/The-Batman.jpg');
+}
+
+.img-3 {
+    background-image: url('https://i.ytimg.com/vi/fHlEM1-EWzM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDg6HYIXyKbd5YN6a6A2jYAkhzRPw');
+}
+
+.img-4 {
+    background-image: url('https://www.tracklist.com.br/wp-content/uploads/2021/10/robert-pattinson-batman-900x506-2.webp');
+}
+
+.img-5 {
+    background-image: url('https://i.ytimg.com/vi/uEySwcw7u5A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD3z08diBNKLjXf2-R8cgLeXOkppg');
+}
+
+.img-6 {
+    background-image: url('https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG-970x550.jpeg');
+}
+
+/* Comentarios */
+
+h3 {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 20px;
+}
+
+.comments-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-content {
+    width: 40%;
+}
+
+.comments {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.comment {
+    font-size: 14px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment-text {
+    margin: 0;
+}
+
+.button-comment {
+    width: 20%;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.nome-comentario{
+    width: 30%;
+    margin-right: 5px;
+}
